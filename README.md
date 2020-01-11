@@ -1,5 +1,5 @@
 # freecashorg/FEIP
-=====================================
+----------------
 
 ## What is FEIP
 -------
@@ -14,12 +14,16 @@ FEIP is released under the terms of the MIT license. See
 [COPY](https://github.com/freecashorg/FEIP/blob/master/COPYING).for more information or see
 https://opensource.org/licenses/MIT
 
-
+## General Protocol
+|Protocol Name|Length|Content|
+|:-----------:|:----:|:------|
+|Header|fixed 8 bytes|e.g: "FEIP0001"|
+|Body|1-247 bytes|Defined by ptotocol,e.g: [FEIP0001](https://github.com/freecashorg/FEIP/blob/master/)|
 ## How to contribute?
 Not opened now.
 
 ## Summary
 -------
-Number|Title|Owner
----|:--:|---:
-FEIP-0001|Freecash Basic information of users|Freecash First Foundation
+|Number|Title|Owner|
+|:-----|:---:|:----|
+|FEIP0001|Freecash Basic information of users|Freecash First Foundation|
