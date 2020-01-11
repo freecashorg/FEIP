@@ -1,1 +1,25 @@
 #FEIP0001
+
+##Introdction
+FEIP defines the ID and LABEL of users in Freecash Ecology.
+
+##Protocol
+|Name|Length|Content|
+|:----:|:----:|:------|
+|Header|fixed 8 bytes|Fixed string: "FEIP0001"|
+|Nickname|1-16 bytes||
+|Labels|2-200 bytes|begin with '#',|
+
+## OP_RETURN Example
+```
+Deisler-jj#Developer 
+Otto#Tech manager#Developer
+```
+
+## Recommended presentation format in Dapps
+```
+Deisler-jj@Ly6j
+```
+
+## Transaction Protocol
+Send any amount FCH to account *todo*
