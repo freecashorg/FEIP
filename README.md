@@ -17,8 +17,8 @@ https://opensource.org/licenses/MIT
 ## General Protocol
 |Protocol Name|Length|Content|
 |:-----------:|:----:|:------|
-|Header|fixed 8 bytes|e.g: "FEIP0001"|
-|Body|1-247 bytes|Defined by ptotocol,e.g: [FEIP0001](https://github.com/freecashorg/FEIP/blob/master/)|
+|Header|fixed 8 bytes|FEIP number, e.g: "FEIP0001"|
+|Body|1-247 bytes|Defined by ptotocol,e.g: [FEIP0001](https://github.com/freecashorg/FEIP/blob/master/FEIP0001)|
 ## How to contribute?
 Not opened now.
 
@@ -26,4 +26,4 @@ Not opened now.
 -------
 |Number|Title|Owner|
 |:-----|:---:|:----|
-|FEIP0001|Freecash Basic information of users|Freecash First Foundation|
+|[FEIP0001](https://github.com/freecashorg/FEIP/blob/master/FEIP0001)|Freecash Basic information of users|Freecash First Foundation|
