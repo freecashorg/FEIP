@@ -5,7 +5,7 @@
 -------
 FEIP(Freecash extended Improvement Protocol) is the standard for Freecash ecology. 
 The difference from FIP/BIP is that FEIP is the protocol for the useage of OP_RETURN.
-For the long-term growth of Freecash ecology，we strongly recommend that the third-party Dapps follow FEIP.
+For the long-term growth of Freecash ecology，we strongly recommend that third-party Dapps follow FEIP.
 
 ## License
 -------
@@ -17,8 +17,8 @@ https://opensource.org/licenses/MIT
 ## General Protocol
 |Protocol Name|Length|Content|
 |:-----------:|:----:|:------|
-|Header|fixed 8 bytes|FEIP number, e.g: "FEIP0001"|
-|Body|1-247 bytes|Defined by ptotocol,e.g: [FEIP0001](https://github.com/freecashorg/FEIP/blob/master/FEIP0001.md)|
+|Header|8 bytes|FEIP number, e.g: "FEIP0001"|
+|Body|1-212 bytes|Defined by ptotocol,e.g: [FEIP0001](https://github.com/freecashorg/FEIP/blob/master/FEIP0001.md)|
 ## How to contribute?
 Not opened now.
 
