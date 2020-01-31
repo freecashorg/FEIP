@@ -15,9 +15,10 @@ FEIP is released under the terms of the MIT license. See
 https://opensource.org/licenses/MIT
 
 ## General Protocol
-|Protocol Name|Length|Content|
+|Field Name|Length|Content|
 |:-----------:|:----:|:------|
-|Header|8 bytes|FEIP number, e.g: "FEIP0001"|
+|Protocol name|4 bytes|0x46,0x45,0x49,0x50 (The HEX of "FEIP")|
+|Protocol number|4 bytes|0x30,0x30,0x30,0x31 (The HEX of "0001")|
 |Body|1-212 bytes|Defined by ptotocol,e.g: [FEIP0001](https://github.com/freecashorg/FEIP/blob/master/FEIP0001.md)|
 ## How to contribute?
 Not opened now.
