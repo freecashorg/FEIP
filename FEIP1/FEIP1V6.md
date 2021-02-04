@@ -14,9 +14,9 @@ TXid:
 ## Contents
 [Introduction](#Introduction)
 
-[General rules of FEIP type protocols](#General rules of FEIP type protocols)
+[General rules of FEIP type protocols](#General_rules_of_FEIP_type_protocols)
 
-[Rules specific to this protocol](#Rules specific to this protocol)
+[Rules specific to this protocol](#Rules_specific_to_this_protocol)
 
 [Register](#Register)
 
@@ -26,7 +26,7 @@ TXid:
 
 
 
-##Introduction
+## Introduction
 
 ```
 Type: FEIP
@@ -40,7 +40,7 @@ Status : Draft
 CreatedDate: 2021-01-30
 ```
 
-##General rules of FEIP type protocols
+## General rules of FEIP type protocols
 
 1. The key data is written in OP_RETURN for public witness.
 
@@ -53,7 +53,7 @@ CreatedDate: 2021-01-30
 5. The "head" specifies the unique protocol file which defines other data.
 
 
-##Rules specific to this protocol
+## Rules specific to this protocol
 
 1. Title in protocol text: type + serialNumber + "V" + versionNumber +'_' + protocolName + '(' + language + ')', e.g: FEIP1V6_FreeProtocolSystem(en-US)
 
@@ -64,7 +64,7 @@ CreatedDate: 2021-01-30
 4. Anyone can evaluate any protocol by writing data in the format given by [Evaluate](#evaluate).
 
 
-##Register
+## Register
 Register a protocol by send a transaction, the OP_RETURN of which contains the data as follows:
 
 |field number|fieldname|type|lenth|content|required|
@@ -112,7 +112,7 @@ Register a protocol by send a transaction, the OP_RETURN of which contains the d
 }
 ```
 
-##Unregister
+## Unregister
 Unregister a protocol by send a transaction, the OP_RETURN of which contains the data as follows:
 
 |field number|field name|type|lenth|content|required|
@@ -142,7 +142,7 @@ Unregister a protocol by send a transaction, the OP_RETURN of which contains the
 }
 ```
 
-##Evaluate
+## Evaluate
 
 |field number|field name|type|lenth|content and rules|required|
 |:----|:----|:----|:----|:----|:----|
