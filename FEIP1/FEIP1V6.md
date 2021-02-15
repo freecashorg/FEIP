@@ -76,7 +76,7 @@ Register a protocol by send a transaction, the OP_RETURN of which contains the d
 |head|fileHash|hex|32|Sha256 value of this file|Y|
 |1|type|String|8|Type of the protocol being registered.|N|
 |2|serialNumber|String|8|Serial number of the protocol being registered., counting from 1.|N|
-|3|verisonNumber|String|4|Version number of the protocol being registered. counting from 1.|N|
+|3|versionNumber|String|4|Version number of the protocol being registered. counting from 1.|N|
 |4|protocolName|String|64|Name of the protocol being registered..|N|
 |5|description|String|256|Short descriptionof the protocol being registered..|N|
 |6|authors|String array|128|FCH addresses of the authors of the protocol being registered..|N|
