@@ -119,7 +119,7 @@ Unregister a protocol by send a transaction, the OP_RETURN of which contains the
 |:----|:----|:----|:----|:----|:----|
 |head|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |head|serialNumber|int|1|Fixed: 1|Y|
-||head|versionNumber|int|1|Fixed: 6||
+|head|versionNumber|int|1|Fixed: 6||
 |head|protocolName|int|18|Fixed: "FreeProtocolSystem"<br>Case insensitive|Y|
 |head|fileHash|hex|32|Sha256 value of this file|Y|
 |1|fileHash|hex|64|The sha256 value of the protocol file being unregistered.|Y|
