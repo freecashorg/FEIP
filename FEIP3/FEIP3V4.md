@@ -77,7 +77,7 @@ The OP_RETURN of which contains the data as follows:
 |head|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |head|serialNumber|int|1|Fixed: 3|Y|
 |head|versionNumber|int|1|Fixed: 4|Y|
-|head|protocolName:|int|3|Fixed: "CID"<br>Case insensitive|Y|
+|head|protocolName:|String|3|Fixed: "CID"<br>Case insensitive|Y|
 |head|fileHash|hex|32|Sha256 value of this file|Y|
 |1|name|string|32|Nick name given by the user|N
 |2|tags|string array|256|Tags the user put on himself/herself|N
@@ -99,11 +99,11 @@ OP_RETURN content:
         protocolName: "CID",
         fileHash: "/* The file hash of FEIP3V4 */"
     },
-    name: CY,
-	tags: [“education“, ”strategic design“, ”economic model”],
-	inviter: C_armX
-	homepage: https://www.zhimidaxue.com
-	noticeFee: 0.01
+    name: "CY",
+    tags: [“education“, ”strategic design“, ”economic model”],
+    inviter: "C_armX",
+    homepage: "https://www.zhimidaxue.com",
+    noticeFee: 0.01
 }
 ```
 
