@@ -65,8 +65,6 @@ CreatedDate: 2021-02-05
 
 5. An address can re-register its unregistered CID.
 
-6. The "inviter" field is only valid when an address registers its first CID.
-
 
 
 ## OP_RETURN
@@ -80,10 +78,8 @@ The OP_RETURN of which contains the data as follows:
 |head|protocolName:|String|3|Fixed: "CID"<br>Case insensitive|Y|
 |head|fileHash|hex|32|Sha256 value of this file|Y|
 |1|name|string|32|Nick name given by the user|N
-|2|tags|string array|256|Tags the user put on himself/herself|N
-|3|inviter|string|40|CID of the inviter|N
-|4|homepage|string|256|The URL showing the details of the CID|N
-|5|noticeFee|double|16|The lowest FCH payment that the user is willing to be notified|N
+|2|url|string|256|The URL showing the details of the CID|N
+|3|noticeFee|double|16|The lowest FCH payment that the user is willing to be notified|N
 
 ## Register Example
 ```
@@ -101,8 +97,7 @@ OP_RETURN content:
     },
     name: "CY",
     tags: [“education“, ”strategic design“, ”economic model”],
-    inviter: "C_armX",
-    homepage: "https://www.zhimidaxue.com",
+    url: "https://www.zhimidaxue.com",
     noticeFee: 0.01
 }
 ```
