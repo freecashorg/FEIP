@@ -2,9 +2,10 @@
 FEIP3: CID
 Version: 4
 Language: en-US
-Author: C_armX, Deisler-JJ_Sboy
+Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Status: draft
 Created date: 2021-02-5
+LastModifiedDate：2021-03-06
 File hash: "HEX Hash"
 TXid: 
 ```
@@ -12,32 +13,33 @@ TXid:
 # FEIP3V4_CID(en-US)
 
 ## Contents
-[Introduction](#Introduction)
+[Introduction](#introduction)
 
-[General rules of FEIP type protocols](#general_rules_of_feip_type_protocols)
+[General rules of FEIP type protocols](#general-rules-of-feip-type-protocols)
 
-[Rules specific to this protocol](#rules_specific_to_this_protocol)
+[Rules specific to this protocol](#rules-specific-to-this-protocol)
 
-[Register Example](#Register_example)
+[Example of Registering a CID](#example-of-registering-a-cid)
 
-[Unregister Example](#Unregister_example)
+[Example of Unregistering a CID](#example-of-unregistering-a-cid)
 
 
 
 ## Introduction
 
 ```
-Type: FEIP
+ProtocolType: FEIP
 SerialNumber: 3
 ProtocolName: CID
 VersionNumber: 4
 Description : Register or unregister a human friendly identity for an address.
-Author: C_armX, Deisler-JJ_Sboy
+Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
-tags: FEIP, CID, Identity, human friendly, basic protocol
-preVersionHash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933"
+Tags: FEIP, CID, identity, human friendly, basic protocol
+PreVersionHash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933"
 Status : Draft
 CreatedDate: 2021-02-05
+LastModifiedDate：2021-03-06
 ```
 
 ## General rules of FEIP type protocols
@@ -50,8 +52,6 @@ CreatedDate: 2021-02-05
 
 4. Encoding : utf-8
 
-5. The "head" specifies the unique protocol file which defines other data.
-
 
 ## Rules specific to this protocol
 
@@ -59,7 +59,7 @@ CreatedDate: 2021-02-05
 
 2. Suffix：The last four letters of the address. If the new CID is the same as any CID that has been registered, increase the length of suffix until the new CID is unique, e.g. CY_kvpAv.
 
-3. User can unregister CID by leaving all fields blank except the "head" fields.
+3. When an address registers a new cid, its previous cid is automatically unregistered.
 
 4. Once a CID is registered by an address, it cannot be registered by other addresses, even if the CID has been unregistered.
 
@@ -72,37 +72,35 @@ The OP_RETURN of which contains the data as follows:
 
 |field number|fieldname|type|lenth|content|required|
 |:----|:----|:----|:----|:----|:----|
-|head|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
-|head|serialNumber|int|1|Fixed: 3|Y|
-|head|versionNumber|int|1|Fixed: 4|Y|
-|head|protocolName:|String|3|Fixed: "CID"<br>Case insensitive|Y|
-|head|fileHash|hex|32|Sha256 value of this file|Y|
-|1|name|string|32|Nick name given by the user|N
-|2|url|string|256|The URL showing the details of the CID|N
-|3|noticeFee|double|16|The lowest FCH payment that the user is willing to be notified|N
+|1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
+|2|sn|int|1|Serial number<br>Fixed: 3|Y|
+|3|version|int|1|Fixed: 4|Y|
+|4|name|String|3|Fixed: "CID"<br>Case insensitive|N|
+|5|hash|hex|32|Sha256 value of this protocol file|N|
+|6|data.operation|string|6-8|"register" or "unregister"|Y|
+|7|data.name|string|1-32|Nick name given by the user|Y when operation is register, N when operation is unregister|
 
-## Register Example
+
+## Example of Registering a CID
 ```
 Address: FPL44YJRwPdd2ipziFvqq6y2tw4VnVvpAv
 CID：CY_vpAv
 OP_RETURN content:
 
 {
-    head:{
-        type: "FEIP",
-        serialNumber: 3,
-        versionNumber: 4,
-        protocolName: "CID",
-        fileHash: "/* The file hash of FEIP3V4 */"
-    },
-    name: "CY",
-    tags: [“education“, ”strategic design“, ”economic model”],
-    url: "https://www.zhimidaxue.com",
-    noticeFee: 0.01
+    "type": "FEIP",
+    "sn": 3,
+    "version": 4,
+    "Name": "CID",
+    "Hash": "/* The file hash of FEIP3V4 */",
+    "data":{
+        "operation": "register",
+        "name": "CY"
+        }
 }
 ```
 
-## Unregister Example
+## Example of Unregistering a CID
 ```
 
 Address: FPL44YJRwPdd2ipziFvqq6y2tw4VnVvpAv
@@ -110,13 +108,14 @@ Address: FPL44YJRwPdd2ipziFvqq6y2tw4VnVvpAv
 OP_RETURN content:
 
 {
-    head:{
-        type: "FEIP",
-        serialNumber: 3,
-        versionNumber: 4,
-        protocolName: "CID",
-        fileHash: "/* The file hash of FEIP3V4 */"
-    }
+    "type": "FEIP",
+    "sn": 3,
+    "version": 4,
+    "Name": "CID",
+    "Hash": "/* The file hash of FEIP3V4 */",
+    "data":{
+        "operation": "unregister"
+        }
 }
 
 ```
