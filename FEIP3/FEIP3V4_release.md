@@ -1,15 +1,3 @@
-```
-FEIP3: CID
-Version: 4
-Language: en-US
-Author: C_armX, Deisler-JJ_Sboy，Free_Cash
-Status: draft
-Created date: 2021-02-5
-LastModifiedDate：2021-03-06
-File hash: "HEX Hash"
-TXid: 
-```
-
 # FEIP3V4_CID(en-US)
 
 ## Contents
@@ -21,8 +9,7 @@ TXid:
 
 [Example of Registering a CID](#example-of-registering-a-cid)
 
-[Example of Unregistering a CID](#example-of-unregistering-a-cid)
-
+[Example of Canceling a CID](#example-of-canceling-a-cid)
 
 
 ## Introduction
@@ -37,21 +24,18 @@ Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
 Tags: FEIP, CID, identity, human friendly, basic protocol
 PreVersionHash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933"
-Status : Draft
-CreatedDate: 2021-02-05
-LastModifiedDate：2021-03-06
 ```
+
 
 ## General rules of FEIP type protocols
 
-1. The importent data is written in OP_RETURN for public witness.
+1. Write important data in OP_RETURN for public witness.
 
 2. The max size of OP_RETURN : 4096 bytes
 
 3. Format : Json
 
 4. Encoding : utf-8
-
 
 ## Rules specific to this protocol
 
@@ -64,7 +48,6 @@ LastModifiedDate：2021-03-06
 4. Once a CID is registered by an address, it cannot be registered by other addresses, even if the CID has been unregistered.
 
 5. An address can re-register its unregistered CID.
-
 
 
 ## OP_RETURN
@@ -82,6 +65,7 @@ The OP_RETURN of which contains the data as follows:
 
 
 ## Example of Registering a CID
+
 ```
 Address: FPL44YJRwPdd2ipziFvqq6y2tw4VnVvpAv
 CID：CY_vpAv
@@ -101,12 +85,10 @@ OP_RETURN content:
 ```
 
 ## Example of Unregistering a CID
+
 ```
-
 Address: FPL44YJRwPdd2ipziFvqq6y2tw4VnVvpAv
-
 OP_RETURN content:
-
 {
     "type": "FEIP",
     "sn": 3,
@@ -117,5 +99,4 @@ OP_RETURN content:
         "operation": "unregister"
         }
 }
-
 ```
