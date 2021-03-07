@@ -61,7 +61,7 @@ The OP_RETURN of which contains the data as follows:
 |4|name|String|3|Fixed: "CID"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.operation|string|6-8|"register" or "unregister"|Y|
-|7|data.name|string|1-32|Nick name given by the user|Y when operation is register, N when operation is unregister|
+|7|data.name|string|1-32|Nick name given by the user|Y when operation is register,</br>N when operation is unregister|
 
 
 ## Example of Registering a CID

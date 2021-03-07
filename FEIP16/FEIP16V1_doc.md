@@ -63,9 +63,9 @@ The OP_RETURN of which contains the data as follows:
 |field number|fieldname|type|lenth|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
-|2|sn|int|1|Serial number<br>Fixed: 16|Y|
+|2|sn|int|2|Serial number<br>Fixed: 16|Y|
 |3|version|int|1|Fixed: 1|Y|
-|4|name|String|3|Fixed: "Evaluation"<br>Case insensitive|N|
+|4|name|String|10|Fixed: "Evaluation"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.sign|char|Fixed: 1|"+" or "-"|Y|
 |7|data.tags|string array|||N|
