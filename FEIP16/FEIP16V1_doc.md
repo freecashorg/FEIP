@@ -13,6 +13,7 @@ TXid:
 # FEIP16V1_Evaluation(en-US)
 
 ## Contents
+
 [Introduction](#introduction)
 
 [General rules of FEIP type protocols](#general-rules-of-feip-type-protocols)
@@ -58,6 +59,7 @@ PreVersionHash:"unkonw"
 5. The evaluator should put the address of evaluatee at first output.
 
 ## OP_RETURN
+
 The OP_RETURN of which contains the data as follows:
 
 |field number|fieldname|type|lenth|content|required|
@@ -67,7 +69,7 @@ The OP_RETURN of which contains the data as follows:
 |3|version|int|1|Fixed: 1|Y|
 |4|name|String|10|Fixed: "Evaluation"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
-|6|data.sign|char|Fixed: 1|"+" or "-"|Y|
+|6|data.sign|char|1|"+" or "-"|Y|
 |7|data.tags|string array|||N|
 
 
@@ -82,8 +84,8 @@ OP_RETURN content:
     "type": "FEIP",
     "sn": 16,
     "version": 1,
-    "Name": "Evaluation",
-    "Hash": "unkonw",
+    "name": "Evaluation",
+    "hash": "unkonw",
     "data":{
         "sign": "+",
         "tags": ["efficient","energetic"]
@@ -104,8 +106,8 @@ OP_RETURN content:
     "type": "FEIP",
     "sn": 3,
     "version": 4,
-    "Name": "Evaluation",
-    "Hash": "unkonw",
+    "name": "Evaluation",
+    "hash": "unkonw",
     "data":{
         "sign": "-",
         "tags": ["inefficient","lazy"]

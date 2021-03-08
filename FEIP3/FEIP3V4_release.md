@@ -15,6 +15,7 @@
 ## Introduction
 
 ```
+
 ProtocolType: FEIP
 SerialNumber: 3
 ProtocolName: CID
@@ -24,6 +25,7 @@ Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
 Tags: FEIP, CID, identity, human friendly, basic protocol
 PreVersionHash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933"
+
 ```
 
 
@@ -51,6 +53,7 @@ PreVersionHash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933
 
 
 ## OP_RETURN
+
 The OP_RETURN of which contains the data as follows:
 
 |field number|fieldname|type|lenth|content|required|
@@ -61,12 +64,12 @@ The OP_RETURN of which contains the data as follows:
 |4|name|String|3|Fixed: "CID"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.operation|string|6-8|"register" or "unregister"|Y|
-|7|data.name|string|1-32|Nick name given by the user|Y when operation is register,</br>N when operation is unregister|
+|7|data.name|string|1-32|Nick name given by the user|Y when operation is register,<br>N when operation is unregister|
 
 
 ## Example of Registering a CID
-
 ```
+
 Address: FPL44YJRwPdd2ipziFvqq6y2tw4VnVvpAv
 CID：CY_vpAv
 OP_RETURN content:
@@ -75,28 +78,31 @@ OP_RETURN content:
     "type": "FEIP",
     "sn": 3,
     "version": 4,
-    "Name": "CID",
-    "Hash": "/* The file hash of FEIP3V4 */",
+    "name": "CID",
+    "hash": "/* The file hash of FEIP3V4 */",
     "data":{
         "operation": "register",
         "name": "CY"
         }
 }
+
 ```
 
 ## Example of Unregistering a CID
-
 ```
+
 Address: FPL44YJRwPdd2ipziFvqq6y2tw4VnVvpAv
 OP_RETURN content:
+
 {
     "type": "FEIP",
     "sn": 3,
     "version": 4,
-    "Name": "CID",
-    "Hash": "/* The file hash of FEIP3V4 */",
+    "name": "CID",
+    "hash": "/* The file hash of FEIP3V4 */",
     "data":{
         "operation": "unregister"
         }
 }
+
 ```
