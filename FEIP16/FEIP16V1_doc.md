@@ -33,7 +33,7 @@ SerialNumber: 16
 ProtocolName: Evaluation
 VersionNumber: 1
 Description : Evaluate an CID to increase/decrease its reputation.
-Author: C_armX, Deisler-JJ_Sboy，Free_Cash
+Author: Deisler-JJ_Sboy，C_armX
 Language: en-US
 Tags: FEIP, Evaluation, Reputation, basic protocol
 PreVersionHash: "unknown"
