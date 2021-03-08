@@ -20,7 +20,7 @@ https://opensource.org/licenses/MIT
 See [FEIP1V1](https://github.com/freecashorg/FEIP/blob/master/FEIP1V6.md).
 
 ## How to contribute?
-Not opened now.
+Not opened yet.
 
 ## Summary
 -------

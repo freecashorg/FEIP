@@ -2,11 +2,11 @@
 FEIP16: Evaluation
 Version: 1
 Language: en-US
-Author: C_armX, Deisler-JJ_Sboy，Free_Cash
+Author: Deisler-JJ_Sboy, C_armX
 Status: draft
 Created date: 2021-02-5
 LastModifiedDate：2021-03-06
-File hash: "unkonw now"
+File hash: "unknown yet"
 TXid: 
 ```
 
@@ -36,7 +36,7 @@ Description : Evaluate an CID to increase/decrease its reputation.
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
 Tags: FEIP, Evaluation, Reputation, basic protocol
-PreVersionHash:"unkonw"
+PreVersionHash: "unknown"
 ```
 
 ## General rules of FEIP type protocols
@@ -54,7 +54,7 @@ PreVersionHash:"unkonw"
 
 1. FEIP16 provides a way for an CID to evaluate other CIDs.
 2. Making evaluation consumes CoinDays.
-3. The evaluation can be Positive or Negative, and The measure unit of an evaluation is CoinDays. For example: "100 CoinDays Negative evaluation" can be marked as "-100CD",and "88 CoinDays positive evaluation" can be marked as "88CD" or "+88CD".
+3. The evaluation can be Positive or Negative, and The measure unit of an evaluation is CoinDays. For example: "100 CoinDays Negative evaluation" can be marked as "-100CD", and "88 CoinDays positive evaluation" can be marked as "88CD" or "+88CD".
 4. The quantity of an evaluation is the CoinDays consumed in the transaction.
 5. The evaluator should put the address of evaluatee at first output.
 
@@ -69,7 +69,7 @@ The OP_RETURN of which contains the data as follows:
 |3|version|int|1|Fixed: 1|Y|
 |4|name|String|10|Fixed: "Evaluation"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
-|6|data.sign|char|1|"+" or "-"|Y|
+|6|data.sign|string|1|must be "+" or "-"|Y|
 |7|data.tags|string array|||N|
 
 
@@ -85,7 +85,7 @@ OP_RETURN content:
     "sn": 16,
     "version": 1,
     "name": "Evaluation",
-    "hash": "unkonw",
+    "hash": "unknown",
     "data":{
         "sign": "+",
         "tags": ["efficient","energetic"]
@@ -107,7 +107,7 @@ OP_RETURN content:
     "sn": 3,
     "version": 4,
     "name": "Evaluation",
-    "hash": "unkonw",
+    "hash": "unknown",
     "data":{
         "sign": "-",
         "tags": ["inefficient","lazy"]
