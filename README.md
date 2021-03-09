@@ -13,7 +13,7 @@ FEIP(Freecash extended Improvement Protocol) is the standard for Freecash ecolog
 -------
 
 FEIP is released under the terms of the MIT license. See
-[COPY](https://github.com/freecashorg/FEIP/blob/master/COPYING).for more information or see
+[LICENSE](https://github.com/freecashorg/FEIP/blob/master/LICENSE).for more information or see
 https://opensource.org/licenses/MIT
 
 ## How to define your own FEIP.

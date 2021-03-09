@@ -31,7 +31,7 @@ PreVersionHash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933
 
 ## General rules of FEIP type protocols
 
-1. Write important data in OP_RETURN for public witness.
+1. Write important data in OP_RETURN for public witness under FEIP type protocols.
 
 2. The max size of OP_RETURN : 4096 bytes
 
