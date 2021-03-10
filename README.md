@@ -29,4 +29,5 @@ Not opened yet.
 |[FEIP1](https://github.com/freecashorg/FEIP/blob/master/FEIP1/FEIP1V6.md)|General Protocol of FEIPs|Freecash First Foundation|
 |[FEIP3](https://github.com/freecashorg/FEIP/blob/master/FEIP3_CID/FEIP3V4_CID_doc.md)|FEIP3V4_CID(en-US)|Freecash First Foundation|
 |[FEIP16](https://github.com/freecashorg/FEIP/blob/master/FEIP16_Evaluation/FEIP16V1_Evaluation_doc.md)|FEIP16V1_Evaluation(en-US)|Freecash First Foundation|
-|[FEIP17](https://github.com/freecashorg/FEIP/blob/master/FEIP17_DigitEnvelope/FEIP17V1_DigitEnvelope_doc.md)|FEIP16V1_Evaluation(en-US)|Freecash First Foundation|
+|[FEIP17](https://github.com/freecashorg/FEIP/blob/master/FEIP17_DigitEnvelope/FEIP17V3_DigitEnvelope_doc.md)|FEIP16V1_DigitEnvelope(en-US)|Freecash First Foundation|
+|[FEIP19](https://github.com/freecashorg/FEIP/blob/master/FEIP19_Group/FEIP19V3_Group_doc.md)|FEIP19V1_Group(en-US)|Freecash First Foundation|

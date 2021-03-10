@@ -1,5 +1,5 @@
 ```
-FEIP17: DigitalEnvelope
+FEIP17: DigitEnvelope
 Version: 3
 Language: en-US
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
@@ -31,10 +31,10 @@ Protocol type: FEIP
 Serial number: 17
 Protocol name: DigitalEnvelope
 Version: 3
-Description : Save encrypted information in the blockchain of FCH.
+Description : Send digit envelope in the blockchain of FCH.
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
-Tags: FEIP, Digital envelope, application protocol
+Tags: FEIP, Digit envelope, application protocol.
 Preversion hash:"ea73a3501179224636d2939f1b2e2f581052d0632bacae3b677cc3805157de96"
 ```
 
@@ -64,10 +64,10 @@ When user create a new item, the OP_RETURN contains the data as follows:
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
 |3|version|int|1|Fixed: 3|Y|
-|4|name|String|4|Fixed: "safe"<br>Case insensitive|N|
+|4|name|String|13|Fixed: "DigitEnvelope"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
-|6|data.op|string|3|"add"|Y|
-|7|data.alg|string|1-32|The encryption algorithm.<br>"ECC256k1-AES256CBC" is recommended.|Y|
+|6|data.op|string|3|operation: "add"|Y|
+|7|data.alg|string|1-32|The encrypt algorithm.<br>"ECC256k1-AES256CBC" is recommended.|Y|
 |8|data.msg|string|1-2048|Encrypted message|Y|
 
 ### Raw data of data.msg
@@ -91,8 +91,8 @@ OP_RETURN content:
     "type": "FEIP",
     "sn": 17,
     "version": 3,
-    "Name": "safe",
-    "Hash": "",
+    "name": "DigitEnvelope",
+    "hash": "",
     "data":{
         "op": "register",
         "alg": "ECC256k1-AES256CBC",
@@ -119,9 +119,9 @@ When user deletes an item, the OP_RETURN contains the data as follows:
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
 |3|version|int|1|Fixed: 3|Y|
-|4|name|String|4|Fixed: "safe"<br>Case insensitive|N|
+|4|name|String|13|Fixed: "DigitEnvelope"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
-|6|data.op|string|3|"del"|Y|
+|6|data.op|string|3|operation: "del"|Y|
 |7|data.txid|string|64|The txid in which the item being deleting was added.|Y|
 
 ### Example to delete an item
@@ -130,7 +130,7 @@ When user deletes an item, the OP_RETURN contains the data as follows:
     "type": "FEIP",
     "sn": 17,
     "version": 3,
-    "Name": "safe",
+    "Name": "DigitEnvelope",
     "Hash": "",
     "data":{
         "op": "del",
