@@ -27,5 +27,6 @@ Not opened yet.
 |Number|Title|Owner|
 |:-----|:---:|:----|
 |[FEIP1](https://github.com/freecashorg/FEIP/blob/master/FEIP1/FEIP1V6.md)|General Protocol of FEIPs|Freecash First Foundation|
-|[FEIP3](https://github.com/freecashorg/FEIP/blob/master/FEIP3/FEIP3V4_doc.md)|FEIP3V4_CID(en-US)|Freecash First Foundation|
-|[FEIP16](https://github.com/freecashorg/FEIP/blob/master/FEIP16/FEIP16V1_doc.md)|FEIP16V1_Evaluation(en-US)|Freecash First Foundation|
+|[FEIP3](https://github.com/freecashorg/FEIP/blob/master/FEIP3_CID/FEIP3V4_CID_doc.md)|FEIP3V4_CID(en-US)|Freecash First Foundation|
+|[FEIP16](https://github.com/freecashorg/FEIP/blob/master/FEIP16_Evaluation/FEIP16V1_Evaluation_doc.md)|FEIP16V1_Evaluation(en-US)|Freecash First Foundation|
+|[FEIP17](https://github.com/freecashorg/FEIP/blob/master/FEIP17_DigitEnvelope/FEIP17V1_DigitEnvelope_doc.md)|FEIP16V1_Evaluation(en-US)|Freecash First Foundation|

@@ -28,15 +28,15 @@ TXid:
 ## Introduction
 
 ```
-ProtocolType: FEIP
-SerialNumber: 16
-ProtocolName: Evaluation
-VersionNumber: 1
+Protocol type: FEIP
+Serial number: 16
+Protocol name: Evaluation
+Version: 1
 Description : Evaluate an CID to increase/decrease its reputation.
 Author: Deisler-JJ_Sboy，C_armX
 Language: en-US
 Tags: FEIP, Evaluation, Reputation, basic protocol
-PreVersionHash: "unknown"
+PreVersion hash: "unknown"
 ```
 
 ## General rules of FEIP type protocols

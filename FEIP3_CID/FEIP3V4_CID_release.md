@@ -16,15 +16,15 @@
 
 ```
 
-ProtocolType: FEIP
-SerialNumber: 3
-ProtocolName: CID
-VersionNumber: 4
-Description : Register or unregister a human friendly identity for an address.
+Protocol type: FEIP
+Serial number: 3
+Protocol name: CID
+Version: 4
+Description: Register or unregister a human friendly identity for an address.
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
 Tags: FEIP, CID, identity, human friendly, basic protocol
-PreVersionHash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933"
+PreVersion hash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933"
 
 ```
 
@@ -63,7 +63,7 @@ The OP_RETURN of which contains the data as follows:
 |3|version|int|1|Fixed: 4|Y|
 |4|name|String|3|Fixed: "CID"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
-|6|data.operation|string|6-8|"register" or "unregister"|Y|
+|6|data.op|string|6-8|operation: "register" or "unregister"|Y|
 |7|data.name|string|1-32|Nick name given by the user|Y when operation is register,<br>N when operation is unregister|
 
 
@@ -81,7 +81,7 @@ OP_RETURN content:
     "name": "CID",
     "hash": "/* The file hash of FEIP3V4 */",
     "data":{
-        "operation": "register",
+        "op": "register",
         "name": "CY"
         }
 }
@@ -101,7 +101,7 @@ OP_RETURN content:
     "name": "CID",
     "hash": "/* The file hash of FEIP3V4 */",
     "data":{
-        "operation": "unregister"
+        "op": "unregister"
         }
 }
 

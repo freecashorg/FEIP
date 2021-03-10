@@ -27,15 +27,15 @@ TXid:
 ## Introduction
 
 ```
-Protocol Type: FEIP
-Serial Number: 17
-Protocol Name: DigitalEnvelope
-Version Number: 3
+Protocol type: FEIP
+Serial number: 17
+Protocol name: DigitalEnvelope
+Version: 3
 Description : Save encrypted information in the blockchain of FCH.
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
 Tags: FEIP, Digital envelope, application protocol
-Preversion Hash:"ea73a3501179224636d2939f1b2e2f581052d0632bacae3b677cc3805157de96"
+Preversion hash:"ea73a3501179224636d2939f1b2e2f581052d0632bacae3b677cc3805157de96"
 ```
 
 ## General rules of FEIP type protocols
