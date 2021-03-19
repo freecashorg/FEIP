@@ -63,7 +63,7 @@ When user create a new item, the OP_RETURN contains the data as follows:
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
-|3|version|int|1|Fixed: 3|Y|
+|3|ver|int|1|Fixed: 3|Y|
 |4|name|String|13|Fixed: "DigitEnvelope"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.op|string|3|operation: "add"|Y|
@@ -90,7 +90,7 @@ OP_RETURN content:
 {
     "type": "FEIP",
     "sn": 17,
-    "version": 3,
+    "ver": 3,
     "name": "DigitEnvelope",
     "hash": "",
     "data":{
@@ -129,7 +129,7 @@ When user deletes an item, the OP_RETURN contains the data as follows:
 {
     "type": "FEIP",
     "sn": 17,
-    "version": 3,
+    "ver": 3,
     "Name": "DigitEnvelope",
     "Hash": "",
     "data":{

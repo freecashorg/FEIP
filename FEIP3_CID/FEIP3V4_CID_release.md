@@ -60,7 +60,7 @@ The OP_RETURN of which contains the data as follows:
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|1|Serial number<br>Fixed: 3|Y|
-|3|version|int|1|Fixed: 4|Y|
+|3|ver|int|1|Fixed: 4|Y|
 |4|name|String|3|Fixed: "CID"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.op|string|6-8|operation: "register" or "unregister"|Y|
@@ -77,7 +77,7 @@ OP_RETURN content:
 {
     "type": "FEIP",
     "sn": 3,
-    "version": 4,
+    "ver": 4,
     "name": "CID",
     "hash": "/* The file hash of FEIP3V4 */",
     "data":{
@@ -97,7 +97,7 @@ OP_RETURN content:
 {
     "type": "FEIP",
     "sn": 3,
-    "version": 4,
+    "ver": 4,
     "name": "CID",
     "hash": "/* The file hash of FEIP3V4 */",
     "data":{

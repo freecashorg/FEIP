@@ -66,7 +66,7 @@ The OP_RETURN of which contains the data as follows:
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 16|Y|
-|3|version|int|1|Fixed: 1|Y|
+|3|ver|int|1|Fixed: 1|Y|
 |4|name|String|10|Fixed: "Evaluation"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.sign|string|1|must be "+" or "-"|Y|
@@ -83,7 +83,7 @@ OP_RETURN content:
 {
     "type": "FEIP",
     "sn": 16,
-    "version": 1,
+    "ver": 1,
     "name": "Evaluation",
     "hash": "unknown",
     "data":{
@@ -105,7 +105,7 @@ OP_RETURN content:
 {
     "type": "FEIP",
     "sn": 3,
-    "version": 4,
+    "ver": 4,
     "name": "Evaluation",
     "hash": "unknown",
     "data":{
