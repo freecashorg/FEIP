@@ -6,7 +6,7 @@ Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Status: draft
 Created date: 2021-03-07
 Last modified date：2021-03-08
-File hash: "783ff1a248ee480b1861128d0c45e79d8a2996964df845418f427cd781639a7c"
+File hash: ""
 TXid: 
 ```
 
@@ -66,7 +66,7 @@ When user create a new item, the OP_RETURN contains the data as follows:
 |3|ver|int|1|Fixed: 3|Y|
 |4|name|String|13|Fixed: "DigitEnvelope"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
-|6|data.op|string|3|operation: "add" or "del"|Y|
+|6|data.op|string|3|operation: "add"|Y|
 |7|data.alg|string|1-32|The encrypt algorithm.<br>"ECC256k1-AES256CBC" is recommended.|Y|
 |8|data.msg|string|1-2048|Encrypted message|Y|
 
@@ -92,7 +92,7 @@ OP_RETURN content:
     "sn": 17,
     "ver": 3,
     "name": "DigitEnvelope",
-    "hash": "783ff1a248ee480b1861128d0c45e79d8a2996964df845418f427cd781639a7c",
+    "hash": "/* The file hash of FEIP17V3_DigitEnvelope_release.md */",
     "data":{
         "op": "add",
         "alg": "ECC256k1-AES256CBC",
@@ -131,7 +131,7 @@ When user deletes an item, the OP_RETURN contains the data as follows:
     "sn": 17,
     "ver": 3,
     "name": "DigitEnvelope",
-    "hash": "783ff1a248ee480b1861128d0c45e79d8a2996964df845418f427cd781639a7c",
+    "hash": "/* The file hash of FEIP17V3_DigitEnvelope_release.md */",
     "data":{
         "op": "del",
         "txid": "/*the txid in which the item being deleted was added.*/"
