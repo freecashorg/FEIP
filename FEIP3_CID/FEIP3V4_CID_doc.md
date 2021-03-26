@@ -5,8 +5,8 @@ Language: en-US
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Status: draft
 Created date: 2021-02-5
-LastModifiedDate：2021-03-06
-File hash: "1403e5b7100d8e24724f12cd1ea0b722086c02250a7c66b711947f14546cfcfd"
+Last modified date：2021-03-06
+File hash: "c296a4c88c7335d042638b0f875e1b4ffa56fe3970afe1ccdbd64d78fb302f3d"
 TXid: 
 ```
 
@@ -38,7 +38,7 @@ Description : Register or unregister a human friendly identity for an address.
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
 Tags: FEIP, CID, identity, human friendly, basic protocol
-PreVersion hash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933"
+Previous version hash:"a43b4d30cf30acfc13d298435118e466da88c679f07de61fd494330b84c63a18"
 
 ```
 
@@ -48,7 +48,7 @@ PreVersion hash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d93
 
 2. The max size of OP_RETURN : 4096 bytes
 
-3. Format : Json
+3. Format : compacted json
 
 4. Encoding : utf-8
 
@@ -71,7 +71,7 @@ PreVersion hash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d93
 
 The OP_RETURN of which contains the data as follows:
 
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|lenth<br>bytes|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|1|Serial number<br>Fixed: 3|Y|
@@ -92,9 +92,9 @@ OP_RETURN content:
 {
     "type": "FEIP",
     "sn": 3,
-    "version": 4,
+    "ver": 4,
     "name": "CID",
-    "hash": "1403e5b7100d8e24724f12cd1ea0b722086c02250a7c66b711947f14546cfcfd",
+    "hash": "c296a4c88c7335d042638b0f875e1b4ffa56fe3970afe1ccdbd64d78fb302f3d",
     "data":{
         "op": "register",
         "name": "CY"
@@ -115,7 +115,7 @@ OP_RETURN content:
     "sn": 3,
     "ver": 4,
     "name": "CID",
-    "hash": "1403e5b7100d8e24724f12cd1ea0b722086c02250a7c66b711947f14546cfcfd",
+    "hash": "c296a4c88c7335d042638b0f875e1b4ffa56fe3970afe1ccdbd64d78fb302f3d",
     "data":{
         "op": "unregister"
         }

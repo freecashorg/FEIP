@@ -24,7 +24,7 @@ Description: Register or unregister a human friendly identity for an address.
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
 Tags: FEIP, CID, identity, human friendly, basic protocol
-PreVersion hash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d933"
+Previous version hash:"a43b4d30cf30acfc13d298435118e466da88c679f07de61fd494330b84c63a18"
 
 ```
 
@@ -35,7 +35,7 @@ PreVersion hash:"921ee337239ea34a1434c91bb8221b979f2c956b512a6f1c0ef89be6d342d93
 
 2. The max size of OP_RETURN : 4096 bytes
 
-3. Format : Json
+3. Format : compacted json
 
 4. Encoding : utf-8
 
@@ -79,7 +79,7 @@ OP_RETURN content:
     "sn": 3,
     "ver": 4,
     "name": "CID",
-    "hash": "/* The file hash of FEIP3V4 */",
+    "hash": "/* The file hash of FEIP3V4_CID_release.md */",
     "data":{
         "op": "register",
         "name": "CY"
@@ -99,7 +99,7 @@ OP_RETURN content:
     "sn": 3,
     "ver": 4,
     "name": "CID",
-    "hash": "/* The file hash of FEIP3V4 */",
+    "hash": "/* The file hash of FEIP3V4_CID_release.md */",
     "data":{
         "op": "unregister"
         }
