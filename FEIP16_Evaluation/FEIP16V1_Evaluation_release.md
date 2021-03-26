@@ -25,7 +25,7 @@ Description : Evaluate an CID to increase/decrease its reputation.
 Author: Deisler-JJ_Sboy，C_armX
 Language: en-US
 Tags: FEIP, Evaluation, Reputation, basic protocol
-PreVersion hash: "unknown"
+Previous version hash: "none"
 ```
 
 ## General rules of FEIP type protocols
@@ -34,7 +34,7 @@ PreVersion hash: "unknown"
 
 2. The max size of OP_RETURN : 4096 bytes
 
-3. Format : Json
+3. Format : compacted json
 
 4. Encoding : utf-8
 
@@ -59,7 +59,6 @@ The OP_RETURN of which contains the data as follows:
 |4|name|String|10|Fixed: "Evaluation"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.sign|string|1|must be "+" or "-"|Y|
-|7|data.tags|string array|||N|
 
 
 ## Example of positive evaluation
@@ -75,10 +74,9 @@ OP_RETURN content:
     "sn": 16,
     "ver": 1,
     "name": "Evaluation",
-    "hash": "unknown",
+    "hash": "/* The file hash of FEIP17V1_Evaluation_release.md */",
     "data":{
-        "sign": "+",
-        "tags": ["efficient","energetic"]
+        "sign": "+"
         }
 }
 
@@ -97,10 +95,9 @@ OP_RETURN content:
     "sn": 3,
     "ver": 4,
     "name": "Evaluation",
-    "hash": "unknown",
+    "hash": "/* The file hash of FEIP17V1_Evaluation_release.md */",
     "data":{
-        "sign": "-",
-        "tags": ["inefficient","lazy"]
+        "sign": "-"
         }
 }
 
