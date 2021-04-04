@@ -1,16 +1,16 @@
 ```
-FEIP17: DigitEnvelope
+FEIP17: SafetyBox
 Version: 3
 Language: en-US
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Status: draft
 Created date: 2021-03-07
 Last modified date：2021-03-08
-File hash: "783ff1a248ee480b1861128d0c45e79d8a2996964df845418f427cd781639a7c"
+File hash: "f9f23d6955a36e03acaad1035acd957fd2927f2118d2ddb8ddccd4e47f58801c"
 TXid: 
 ```
 
-# FEIP17V3_DigitalEnvelope(en-US)
+# FEIP17V3_SafetyBox(en-US)
 
 ## Contents
 [Introduction](#introduction)
@@ -29,12 +29,12 @@ TXid:
 ```
 Protocol type: FEIP
 Serial number: 17
-Protocol name: DigitalEnvelope
+Protocol name: SafetyBox
 Version: 3
-Description : Send digit envelope in the blockchain of FCH.
+Description : Save encrpted important data on the blockchain of FCH.
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Language: en-US
-Tags: FEIP, Digit envelope, application protocol.
+Tags: FEIP, safety box, application protocol.
 Previous version hash:"ea73a3501179224636d2939f1b2e2f581052d0632bacae3b677cc3805157de96"
 ```
 
@@ -53,7 +53,7 @@ Previous version hash:"ea73a3501179224636d2939f1b2e2f581052d0632bacae3b677cc3805
 
 1. This protocol helps users to write encrypted personal information in the blockchain of FCH.
 
-2. Use the public key of the first output address to encrypt message.
+2. Use the public key of the first output address to encrypt the message.
 
 ## Add an item
 
@@ -64,7 +64,7 @@ When user create a new item, the OP_RETURN contains the data as follows:
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
 |3|ver|int|1|Fixed: 3|Y|
-|4|name|String|13|Fixed: "DigitEnvelope"<br>Case insensitive|N|
+|4|name|String|13|Fixed: "SafetyBox"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.op|string|3|operation: "add" or "del"|Y|
 |7|data.alg|string|1-32|The encrypt algorithm.<br>"ECC256k1-AES256CBC" is recommended.|Y|
@@ -91,8 +91,8 @@ OP_RETURN content:
     "type": "FEIP",
     "sn": 17,
     "ver": 3,
-    "name": "DigitEnvelope",
-    "hash": "783ff1a248ee480b1861128d0c45e79d8a2996964df845418f427cd781639a7c",
+    "name": "SafetyBox",
+    "hash": "f9f23d6955a36e03acaad1035acd957fd2927f2118d2ddb8ddccd4e47f58801c",
     "data":{
         "op": "add",
         "alg": "ECC256k1-AES256CBC",
@@ -119,7 +119,7 @@ When user deletes an item, the OP_RETURN contains the data as follows:
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
 |3|version|int|1|Fixed: 3|Y|
-|4|name|String|13|Fixed: "DigitEnvelope"<br>Case insensitive|N|
+|4|name|String|13|Fixed: "SafetyBox"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.op|string|3|operation: "del"|Y|
 |7|data.txid|string|64|The txid in which the item being deleting was added.|Y|
@@ -130,8 +130,8 @@ When user deletes an item, the OP_RETURN contains the data as follows:
     "type": "FEIP",
     "sn": 17,
     "ver": 3,
-    "name": "DigitEnvelope",
-    "hash": "783ff1a248ee480b1861128d0c45e79d8a2996964df845418f427cd781639a7c",
+    "name": "SafetyBox",
+    "hash": "f9f23d6955a36e03acaad1035acd957fd2927f2118d2ddb8ddccd4e47f58801c",
     "data":{
         "op": "del",
         "txid": "/*the txid in which the item being deleted was added.*/"

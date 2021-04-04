@@ -5,7 +5,7 @@ Language: en-US
 Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Status: draft
 Created date: 2021-03-07
-LastModifiedDate：2021-03-08
+Last modified date：2021-03-08
 File hash: ""
 TXid: 
 ```
@@ -35,7 +35,7 @@ Description : Group management.
 Author: C_armX, Deisler-JJ_Sboy
 Language: en-US
 Tags: FEIP, Digital envelope, application protocol
-Preversion hash:"unknown"
+Previous version hash:"unknown"
 ```
 
 ## General rules of FEIP type protocols
@@ -44,7 +44,7 @@ Preversion hash:"unknown"
 
 2. The max size of OP_RETURN : 4096 bytes
 
-3. Format : Json
+3. Format : compacted json
 
 4. Encoding : utf-8
 
