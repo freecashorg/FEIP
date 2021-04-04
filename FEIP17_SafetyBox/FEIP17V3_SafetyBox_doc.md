@@ -6,7 +6,7 @@ Author: C_armX, Deisler-JJ_Sboy，Free_Cash
 Status: draft
 Created date: 2021-03-07
 Last modified date：2021-03-08
-File hash: "f9f23d6955a36e03acaad1035acd957fd2927f2118d2ddb8ddccd4e47f58801c"
+File hash: "a9c9879d7b33473a7b04f847a8a9ca067ce82410fcab98b7c936f92e4a5d45f3"
 TXid: 
 ```
 
@@ -64,7 +64,7 @@ When user create a new item, the OP_RETURN contains the data as follows:
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
 |3|ver|int|1|Fixed: 3|Y|
-|4|name|String|13|Fixed: "SafetyBox"<br>Case insensitive|N|
+|4|name|String|9|Fixed: "SafetyBox"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.op|string|3|operation: "add" or "del"|Y|
 |7|data.alg|string|1-32|The encrypt algorithm.<br>"ECC256k1-AES256CBC" is recommended.|Y|
@@ -92,7 +92,7 @@ OP_RETURN content:
     "sn": 17,
     "ver": 3,
     "name": "SafetyBox",
-    "hash": "f9f23d6955a36e03acaad1035acd957fd2927f2118d2ddb8ddccd4e47f58801c",
+    "hash": "a9c9879d7b33473a7b04f847a8a9ca067ce82410fcab98b7c936f92e4a5d45f3",
     "data":{
         "op": "add",
         "alg": "ECC256k1-AES256CBC",
@@ -119,19 +119,19 @@ When user deletes an item, the OP_RETURN contains the data as follows:
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
 |3|version|int|1|Fixed: 3|Y|
-|4|name|String|13|Fixed: "SafetyBox"<br>Case insensitive|N|
+|4|name|String|9|Fixed: "SafetyBox"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.op|string|3|operation: "del"|Y|
 |7|data.txid|string|64|The txid in which the item being deleting was added.|Y|
 
-### Example to delete an item
+### Example of deleting an item
 ```
 {
     "type": "FEIP",
     "sn": 17,
     "ver": 3,
     "name": "SafetyBox",
-    "hash": "f9f23d6955a36e03acaad1035acd957fd2927f2118d2ddb8ddccd4e47f58801c",
+    "hash": "a9c9879d7b33473a7b04f847a8a9ca067ce82410fcab98b7c936f92e4a5d45f3",
     "data":{
         "op": "del",
         "txid": "/*the txid in which the item being deleted was added.*/"

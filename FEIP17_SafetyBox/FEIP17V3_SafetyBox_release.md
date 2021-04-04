@@ -52,7 +52,7 @@ When user create a new item, the OP_RETURN contains the data as follows:
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
 |3|ver|int|1|Fixed: 3|Y|
-|4|name|String|13|Fixed: "SafetyBox"<br>Case insensitive|N|
+|4|name|String|9|Fixed: "SafetyBox"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.op|string|3|operation: "add" or "del"|Y|
 |7|data.alg|string|1-32|The encrypt algorithm.<br>"ECC256k1-AES256CBC" is recommended.|Y|
@@ -107,12 +107,12 @@ When user deletes an item, the OP_RETURN contains the data as follows:
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
 |3|version|int|1|Fixed: 3|Y|
-|4|name|String|13|Fixed: "SafetyBox"<br>Case insensitive|N|
+|4|name|String|9|Fixed: "SafetyBox"<br>Case insensitive|N|
 |5|hash|hex|32|Sha256 value of this protocol file|N|
 |6|data.op|string|3|operation: "del"|Y|
 |7|data.txid|string|64|The txid in which the item being deleting was added.|Y|
 
-### Example to delete an item
+### Example of deleting an item
 ```
 {
     "type": "FEIP",
