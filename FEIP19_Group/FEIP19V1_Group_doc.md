@@ -6,7 +6,7 @@ Author: C_armX, Deisler-JJ_Sboy
 Status: draft
 Created date: 2021-04-03
 Last modified date：2021-04-03
-File hash: ""
+File hash: "9b1f76a0f42be93b89df1b712547f1c55ecaaa9e0cf95288ba7bf9a6f6131515"
 TXid: 
 ```
 
@@ -78,10 +78,10 @@ Previous version hash:"unknown"
     "sn": 19,
     "ver": 3,
     "name": "Group",
-    "hash": "fc623472ea6c47dc4862c8b777ae634857d1340ea4cd543ebf9317d7fd10ce25",
+    "hash": "9b1f76a0f42be93b89df1b712547f1c55ecaaa9e0cf95288ba7bf9a6f6131515",
     "data":{
         "op": "create",
-        "name": "test"
+        "name": "test",
         "desc": "This is a test group"
     }
 }
@@ -107,11 +107,11 @@ Previous version hash:"unknown"
     "sn": 19,
     "ver": 1,
     "name": "Group",
-    "hash": "fc623472ea6c47dc4862c8b777ae634857d1340ea4cd543ebf9317d7fd10ce25",
+    "hash": "9b1f76a0f42be93b89df1b712547f1c55ecaaa9e0cf95288ba7bf9a6f6131515",
     "data":{
-        "gid": "1111111122222222333333334444444411111111222222223333333344444444",
         "op": "update",
-        "name": "test"
+        "gid": "1111111122222222333333334444444411111111222222223333333344444444",
+        "name": "test",
         "desc": "This is a test group"
     }
 }
@@ -135,10 +135,10 @@ Previous version hash:"unknown"
     "sn": 19,
     "ver": 1,
     "name": "Group",
-    "hash": "fc623472ea6c47dc4862c8b777ae634857d1340ea4cd543ebf9317d7fd10ce25",
+    "hash": "9b1f76a0f42be93b89df1b712547f1c55ecaaa9e0cf95288ba7bf9a6f6131515",
     "data":{
-        "gid": "1111111122222222333333334444444411111111222222223333333344444444",
         "op": "join",
+        "gid": "1111111122222222333333334444444411111111222222223333333344444444"
     }
 }
 ```
@@ -161,10 +161,10 @@ Previous version hash:"unknown"
     "sn": 19,
     "ver": 1,
     "name": "Group",
-    "hash": "fc623472ea6c47dc4862c8b777ae634857d1340ea4cd543ebf9317d7fd10ce25",
+    "hash": "9b1f76a0f42be93b89df1b712547f1c55ecaaa9e0cf95288ba7bf9a6f6131515",
     "data":{
         "op": "leave",
-        "gid": "1111111122222222333333334444444411111111222222223333333344444444",
+        "gid": "1111111122222222333333334444444411111111222222223333333344444444"
     }
 }
 ```

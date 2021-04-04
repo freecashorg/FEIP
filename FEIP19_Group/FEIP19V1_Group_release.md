@@ -70,7 +70,7 @@ Previous version hash:"unknown"
     "hash": "/* The file hash of FEIP19V1_Group_release.md */",
     "data":{
         "op": "create",
-        "name": "test"
+        "name": "test",
         "desc": "This is a test group"
     }
 }
@@ -99,9 +99,9 @@ Previous version hash:"unknown"
     "name": "Group",
     "hash": "/* The file hash of FEIP19V1_Group_release.md */",
     "data":{
-        "gid": "1111111122222222333333334444444411111111222222223333333344444444",
         "op": "update",
-        "name": "test"
+        "gid": "1111111122222222333333334444444411111111222222223333333344444444",
+        "name": "test",
         "desc": "This is a test group"
     }
 }
@@ -127,8 +127,8 @@ Previous version hash:"unknown"
     "name": "Group",
     "hash": "/* The file hash of FEIP19V1_Group_release.md */",
     "data":{
-        "gid": "1111111122222222333333334444444411111111222222223333333344444444",
         "op": "join",
+        "gid": "1111111122222222333333334444444411111111222222223333333344444444"
     }
 }
 ```
@@ -154,7 +154,7 @@ Previous version hash:"unknown"
     "hash": "/* The file hash of FEIP19V1_Group_release.md */",
     "data":{
         "op": "leave",
-        "gid": "1111111122222222333333334444444411111111222222223333333344444444",
+        "gid": "1111111122222222333333334444444411111111222222223333333344444444"
     }
 }
 ```
