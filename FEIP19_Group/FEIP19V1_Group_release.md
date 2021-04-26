@@ -49,7 +49,7 @@ Previous version hash:"unknown"
 5. Everyone can join or leave any group.
 
 ## Create a group
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 19|Y|
@@ -78,7 +78,7 @@ Previous version hash:"unknown"
 
 
 ## Update group information
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 19|Y|
@@ -108,7 +108,7 @@ Previous version hash:"unknown"
 ```
 
 ## Join in a group
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 19|Y|
@@ -134,7 +134,7 @@ Previous version hash:"unknown"
 ```
 
 ## Leave a group
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 19|Y|

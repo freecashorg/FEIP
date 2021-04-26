@@ -51,7 +51,7 @@ Previous version hash: "none"
 
 The OP_RETURN of which contains the data as follows:
 
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 16|Y|

@@ -59,7 +59,7 @@ Previous version hash:"ea73a3501179224636d2939f1b2e2f581052d0632bacae3b677cc3805
 
 When user create a new item, the OP_RETURN contains the data as follows:
 
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
@@ -114,7 +114,7 @@ Raw information of data.msg:
 
 When user deletes an item, the OP_RETURN contains the data as follows:
 
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|

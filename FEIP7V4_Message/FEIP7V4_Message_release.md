@@ -55,7 +55,7 @@ Previous version hash:"0d5f0ecff1f5cd64463bcd08a595e561ded0ea499b2d2e3d5db2d59f9
 
 When user create a new item, the OP_RETURN contains the data as follows:
 
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 7|Y|

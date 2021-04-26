@@ -60,7 +60,7 @@ When user create a new item, the OP_RETURN contains the data as follows:
 
 ### Raw data of data.msg
 
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|string|16|Customized by the user or App|N|
 |2|title|string|128|Title, account, or other.<br>Depends on "type".|N|
@@ -102,7 +102,7 @@ Raw information of data.msg:
 
 When user deletes an item, the OP_RETURN contains the data as follows:
 
-|field number|fieldname|type|lenth|content|required|
+|field number|fieldname|type|length|content|required|
 |:----|:----|:----|:----|:----|:----|
 |1|type|String|4|Fixed: "FEIP"<br>Case insensitive|Y|
 |2|sn|int|2|Serial number<br>Fixed: 17|Y|
